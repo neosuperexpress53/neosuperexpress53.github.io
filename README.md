@@ -1,17 +1,16 @@
 # ylilyyc-bot-github.io
-# Project Title
+# Once Upon Online
 
 This is a website made for book readers who wish to purchase and sell books. Users may buy or put up for sale old books they no longer need.
 
-# Installation
+## Installation
 
 Steps to install and run the project
 
-
-# Usage
+## Usage
 
 Examples of how to use the project
 
-# Authors
+## Authors
 
 - Calvin Nguyen, Yanyu Chen
