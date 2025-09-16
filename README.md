@@ -1,4 +1,4 @@
-## Once Upon Online Website
+## Once Upon Online
 
 This is a website made for book readers who wish to purchase and sell books. Users may buy or put up for sale old books they no longer need.
 
