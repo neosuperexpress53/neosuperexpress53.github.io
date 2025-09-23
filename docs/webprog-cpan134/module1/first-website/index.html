@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <!--<Description and parameters for the page. Adds keywords, authors, and other relevant meta data.-->
+    <!--The head section is invisible, it is only visible to people with the source code.-->
+    <head>
+        <title>Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Calvin">
+        <meta name="keywords" content="HTML, CSS, Web Design, Fashion">
+        <!--Describe the site within one sentence.-->
+        <meta name="description" content="Homepage of My Little Store">
+        <!--This below meta tag is important for every webpage.-->
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="icon" href="images/logo.ico" type="images/x-icon">
+    </head>
+    <!--Everything visible goes in the body.-->
+    <body>
+        <header id="top">
+            <!--The Heading, the title. H1 is the largest one and it descends in size. H1 should be used to "headlines".-->
+            <h1>Heading Level 1</h1>
+            <p><b>The quick fox jumps over the lazy brown dog.</b> <i>Lorem ipsum dolor sit</i>, amet consectetur adipisicing elit. Ex, ad! Consequatur asperiores ullam possimus doloremque deleniti excepturi, fuga sunt, sed adipisci, omnis necessitatibus voluptatem maxime accusantium magnam labore ipsa quasi.</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--b = bold, i = italics-->
+        <main>
+            <section>
+                <h2>Heading Level 2</h2>
+                <p>Me when I Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt, laborum eaque. Soluta ullam quae iusto culpa similique veritatis, fugiat, iure tempore vel sequi ipsam non expedita? Error nobis tempora dicta? frfr</p>
+            </section>
+            h3>Heading Level 3</h3>
+
+            <!--Everything must stay within the tag, such a modifiers (height or width adjustment)-->
+            <!--Note: Height and width are measured in pixels.-->
+            <img src="images/nature.jpg" alt="Look at this cool sunset yo." width="400" height="300">
+            <h4>Heading Level 4</h4>
+
+            <!--[target="_blank"] makes it open in a new tab-->
+            <a href="http://www.humber.ca" target="_blank">Humber</a>
+            <h5>Heading Level 5</h5>
+            <br> <!--Line break, this is considered an empty tag because you do not close it (/)-->
+
+            <!--This is an unorganised list, it makes bullet points.-->
+            <ul type="square">
+                <li>Web Programming</li>
+                <li>Operating System</li>
+                <li>Database Designs</li>
+            </ul>
+            <h6>Heading Level 6</h6>
+
+            <!--This is an ordered list, it makes it numbered.-->
+            <ol type="A">
+                <li>List Item 1</li>
+                <li>List Item 2</li>
+                <li>List Item 3</li>
+            </ol>
+            <address>
+                1273 Rockefeller Street
+                Toronto, CA
+            </address>
+        </main>
+        <footer>
+            <p>Author: Calvin</p>
+            <!--Creates a link. The top bookmark is found in header (manually placed).-->
+            <a href="#top">Back to Top</a>
+            <!--Special unicode requires those specific strings. &nbsp; is to add a space.-->
+            <p>&copy;&nbsp;Copyright reserved 2025</p>
+        </footer>
+    </body>
+</html>

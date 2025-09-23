@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <!--<Description and parameters for the page. Adds keywords, authors, and other relevant meta data.-->
+    <!--The head section is invisible, it is only visible to people with the source code.-->
+    <head>
+        <title>About Page</title>
+        <meta charset="UTF-8">
+        <meta name="author" content="Calvin">
+        <meta name="keywords" content="HTML, CSS, Web Design, Fashion">
+        <!--Describe the site within one sentence.-->
+        <meta name="description" content="Homepage of My Little Store">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="icon" href="images/logo.ico" type="images/x-icon">
+    </head>
+    <!--Everything visible goes in the body.-->
+    <body>
+        <header id="top">
+            <!--The Heading, the title. H1 is the largest one and it descends in size. H1 should be used to "headlines".-->
+            <h1>Heading Level 1</h1>
+            <p><b>The quick fox jumps over the lazy brown dog.</b> <i>Lorem ipsum dolor sit</i>, amet consectetur adipisicing elit. Ex, ad! Consequatur asperiores ullam possimus doloremque deleniti excepturi, fuga sunt, sed adipisci, omnis necessitatibus voluptatem maxime accusantium magnam labore ipsa quasi.</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">Homepage</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--b = bold, i = italics-->
+        <main>
+            <!--tr is row, th is heading-->
+            <section>
+                <!--Table is non-semantic.-->
+                <table>
+                    <caption>Courses Information</caption>
+                    <thead>
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last name</th>
+                        <th>Courses</th>
+                        <th>Grades</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>Doe</td>
+                        <td>Web Programming</td>
+                        <td>67</td>
+                    </tr>
+                    <tr>
+                        <td>Jane</td>
+                        <td>Doe</td>
+                        <td>Database Designs</td>
+                        <td>78</td>
+                    </tr>
+                    <tr>
+                        <td rowspan="2">Harper</td>
+                        <td rowspan="2">Bill</td>
+                        <td>Web Programming</td>
+                        <td>67</td>
+                    </tr>
+                    <tr>
+                        <td>Web Programming</td>
+                        <td>67</td>
+                    </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td colspan="3">Average Grades</td>
+                            <td>290</td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </section>
+            <section>
+                <!--Description List-->
+                <dl>
+                    <dt>Web Programming</dt>
+                    <dd>A course in first term</dd>
+                    <dt>Database Designs</dt>
+                    <dd>A course in first term</dd>
+                </dl>
+            </section>
+
+            <article>
+                <!--div is similar to section, section is more recommended because it is a semantic element-->
+                <div>
+                    <!--iframes are for link embeds (framed)-->
+                    <iframe src="https://www.youtube.com/embed/mGKl5KLJAq8?si=WS6vtA_Hm01MugX4" frameborder="0" width="500" height="300"></iframe>
+                </div>
+                <div>
+                    <video controls autoplay muted width="400" height="200">
+                        <source src="images/video.mp4" type="video/mp4">
+                        <!--Additional sources may be added as a fallback in case the .mp4 doesn't work.-->
+                    </video>
+                </div>
+                <div>
+                    <audio controls>
+                        <source src="images/audio.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </article>
+
+
+
+
+        </main>
+        <footer>
+            <p>Author: Calvin</p>
+            <!--Creates a link. The top bookmark is found in header (manually placed).-->
+            <a href="#top">Back to Top</a>
+            <!--Special unicode requires those specific strings. &nbsp; is to add a space.-->
+            <p>&copy;&nbsp;Copyright reserved 2025</p>
+        </footer>
+    </body>
+</html>
