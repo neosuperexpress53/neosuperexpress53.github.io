@@ -1,0 +1,268 @@
+/* Importing the font "Titillium Web" from Google Fonts. */
+@font-face {
+    font-family: titilliumWeb;
+    src: url("../fonts/TitilliumWeb-Regular.ttf");
+}
+
+/* CSS adjusting the entire webpage. I am setting one colour for the entire webpage with a specific font and width. */
+html {
+    font-family: titilliumWeb;
+    background-color: lightsteelblue;
+    width: 1000px;
+    margin: auto;
+}
+
+/* Adjusting the dimensions for the header, as well as giving it a coloured background and border. */
+header {
+    margin-top: 160px;
+    background-image: linear-gradient(45deg, darkblue, lightblue);
+    border: 4px darkblue solid;
+    box-shadow: 12px 12px 40px 20px lightblue;
+    padding: 10px;
+}
+
+/* Giving all the header images the same border and drop-shadow. */
+header img {
+    border: 8px midnightblue double;
+    filter:drop-shadow(2px 2px 4px darkred)
+}
+
+/* I am using a different font for the tite and subtitle in order to make it unique. */
+header h1 {
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 1px 1px 6px midnightblue;
+    margin-bottom: -20px;
+    text-align: right;
+    padding-right: 20px;
+}
+
+header h3 {
+    position: relative;
+    font-family: 'Courier New', Courier, monospace;
+    text-shadow: 3px 1px 2px blue;
+    text-align: right;
+    padding-right: 20px;
+}
+
+/* First image in the header with an animation. */
+header img:first-child {
+    position: relative;
+    width: 200px;
+    height: auto;
+    transform: rotate(-10deg);
+    top: -120px;
+    float: left;
+    animation-name: firstImageMove;
+    animation-duration: 2.2s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+/* Animation to show the image moving onto the page upon load. */
+@keyframes firstImageMove {
+
+    0% {
+        top: -5000px;
+        left: -200px;
+    }
+
+    25% {
+        top: -600px;
+        left: -200px;
+        transform: rotate(-200deg);
+    }
+
+    to {
+        top: -120px;
+        left: 0px;
+    }
+
+}
+
+/* Second image of myself in the header. */
+header img:nth-child(2) {
+    position: relative;
+    width: 200px;
+    height: auto;
+    float: left;
+    transform: rotate(15deg);
+    margin-top: -50px;
+    margin-left: -50px;
+    margin-right: 40px;
+    top: -40px;
+    left: 10px;
+    animation-name: secondImageMove;
+    animation-duration: 1.7s;
+    animation-delay: 0s;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+/* Animation similar to the other image in the header, adjusted to stop moving just a tiny bit after the other image. */
+@keyframes secondImageMove {
+
+    0% {
+        top: -5000px;
+        left: -200px;
+    }
+
+    30% {
+        top: -400px;
+        left: -200px;
+        transform: rotate(-170deg);
+    }
+
+    to {
+        top: -40px;
+        left: 10px;
+    }
+
+}
+
+/* This will target all the sections within the main tag in order to keep them consistent. */
+main section {
+    background-color: whitesmoke;
+    border: 4px midnightblue dashed;
+}
+
+/* First paragraph section of my webpage. */
+main section:first-child {
+    margin: auto;
+    margin-top: 100px;
+    padding: 60px;
+}
+
+/* An image of myself to accompany my "About Me" section. */
+main section:first-child img {
+    position: relative;
+    float: right;
+    width: 160px;
+    left: 30px;
+    bottom: 50px;
+    filter:drop-shadow(2px 2px 4px black);
+    padding: 20px;
+    animation-name: thirdImageMove;
+    animation-duration: 1.3s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+/* This is an animation to have the image slide from left-to-right when a user loads into the webpage. */
+@keyframes thirdImageMove {
+
+    from {
+        left: -1000px;
+        transform: rotate(-70deg);
+    }
+
+}
+
+main section:first-child h2 {
+    text-shadow: 4px 1px 3px midnightblue;
+}
+
+/* Second paragraph section of my webpage. I aim to keep the backgrounds and styling consistent.*/
+main section:nth-child(2) {
+    margin-top: 50px;
+    padding: 60px;
+    text-align: right;
+}
+
+main section:nth-child(2) h2 {
+    text-shadow: -4px 1px 3px darkred;
+}
+
+/* Image to accompany the hobby section. */
+main section:nth-child(2) img {
+    height: 275px;
+    padding: 10px;
+    position: relative;
+    float: left;
+    top: 30px;
+    right: 20px;
+    filter:drop-shadow(2px 2px 4px black);
+    animation-name: fourthImageMove;
+    animation-duration: 1.3s;
+    animation-delay: 0s;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+}
+
+/* This animation mirrors the animation for the image within the 'About Me' section, except it moves from right-to-left. */
+@keyframes fourthImageMove {
+
+    from {
+        right: -1000px;
+        transform: rotate(80deg);
+    }
+
+}
+
+/* Third and final paragraph section of my webpage. */
+main section:last-child {
+    text-align: center;
+    padding: 60px;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+}
+
+main section:last-child h2 {
+    text-shadow: 0px 4px 2px lightblue;
+}
+
+main section:last-child p {
+    padding-left: 120px;
+    padding-right: 120px;
+}
+
+/* Button that leads the user to my Google Drive */
+main section:last-child button {
+    display: block;
+    margin-top: 30px;
+    margin-left: 44%;
+    margin-bottom: 40px;
+    padding: 10px;
+    transition-property: transform;
+    transition-duration: 0.8s;
+    transition-timing-function: ease-in;
+}
+
+/* Little animation to make the button spin once hovered */
+main section:last-child button:hover {
+    transform: rotate(360deg);
+}
+
+/* This will target all of the images in order to give them a consistent width and border. */
+main section:last-child img {
+    width: 300px;
+    height: auto;
+    border: 10px double midnightblue;
+}
+
+/* First image - Minato City. */
+main section:last-child img:first-child {
+    margin-right: -180px;
+    position: relative;
+    float: left;
+    bottom: 70px;
+    right: 200px;
+    transform: rotate(-15deg);
+}
+
+/* Second image - Evening at Downtown Toronto */
+main section:last-child img:nth-child(2) {
+    margin-left: -200px;
+    position: relative;
+    float: right;
+    bottom: 75px;
+    left: 270px;
+    transform: rotate(15deg);
+}
