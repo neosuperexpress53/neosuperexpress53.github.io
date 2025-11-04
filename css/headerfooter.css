@@ -69,12 +69,12 @@ header table:last-child tr td a {
 
 footer {
     margin: 50px auto;
-    border: 2px solid #C9A0DC;
     width: 1500px;
     height: 50px;
     background-color: #C9A0DC;
     color: black;
     padding-top: 20px;
+    border-top: 4px solid #700548;
 }
 
 footer div {

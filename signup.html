@@ -40,52 +40,53 @@
         </table>
     </header>
 
-    <body>
-        
+    
+    <main>
         <form action="profile.html" method="post"> 
+            <fieldset> 
+                <legend><h2>Sign-Up</h2></legend>
 
-                <fieldset> 
-                    <legend><h2>Sign-Up</h2></legend>
+                <table>
+                    <tr>
+                        <td><label for="fName">First Name:</label></td>
+                        <td><input type="text" id="fName" name="fName" required autofocus></td>
+                    </tr>
+                    <tr>
+                        <td><label for="lName">Last Name:</label></td>
+                        <td><input type="text" id="lName" name="lName" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="username">Username:</label></td>
+                        <td><input type="text" id="username" name="username" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email:</label></td>
+                        <td><input type="email" id="email" name="email" placeholder="example@gmail.com" required></td>
+                    </tr>
+                    <tr>
+                        <td><label for="phone">Phone:</label></td>
+                        <td><input type="text" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required></td>
+                    </tr>
+                    <tr>
+                        <td>Gender:</td>
+                        <td id="radialMenu">
+                            <input type="radio" id="female" name="gender" value="Female">
+                            <label for="female">Female</label><br>
+                            <input type="radio" id="male" name="gender" value="Male"> 
+                            <label for="female">Male</label><br>
+                            <input type="radio" id="other" name="gender" value="Other">
+                            <label for="female">Other</label>
+                        </td>
+                    </tr>
+                </table>
 
-                    <section id="guideline">
-                        <label for="fName">First Name:</label><br><br><br>
-                        <label for="lName">Last Name:</label><br><br><br>
-                        <label for="username">Username:</label><br><br><br>
-                        <label for="email">Email:</label><br><br><br>
-                        <label for="phone">Phone:</label><br><br>
-                        <p>Gender:</p><br>
-                    </section>
-
-                    <section id="entries">
-                        <input type="text" id="fName" name="fName" required autofocus><br><br>
-                        <input type="text" id="lName" name="lName" required><br><br>
-                        <input type="text" id="username" name="username" required><br><br>
-                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
-                        <input type="text" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
-
-                        <input type="radio" id="female" name="gender" value="Female"> 
-                        <label for="female">Female</label><br>
-                        <input type="radio" id="male" name="gender" value="Male"> 
-                        <label for="female">Male</label><br>
-                        <input type="radio" id="other" name="gender" value="Other">
-                        <label for="female">Other</label><br><br>
-                    </section>
-
-                    <table>
-                        <tr>
-                            <td><label for="fName">First Name:</label><br><br><br></td>
-                            <td><input type="text" id="fName" name="fName" required autofocus><br><br></td>
-                        </tr>
-                        <tr>
-                            <td><label for="lName">Last Name:</label><br><br><br></td>
-                            <td><input type="text" id="lName" name="lName" required><br><br></td>
-                        </tr>
-                    </table>
-
+                <section id="buttonArea">
                     <input type="submit" value="Sign-Up" id="submit">
-                </fieldset>
-
-    </body>
+                </section>
+            </fieldset>
+        </form>
+    </main>
+    
 
     <footer>
         <div>
