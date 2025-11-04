@@ -1,0 +1,15 @@
+fieldset {
+    border: 2px #700548 dashed;
+    width: 1000px;
+    margin: auto;
+}
+
+#guideline {
+    width: 30%;
+    float: left;
+}
+
+#guideline label, #guideline p {
+    float: right;
+    
+}

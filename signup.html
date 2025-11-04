@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Once Upon Online: Bookmarks</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/headerfooter.css" type="text/css">
+    <link rel="stylesheet" href="css/signup.css" type="text/css">
+    <link rel="icon" href="./media/tab_logo.ico" type="images/x-icon">
+    <title>Once Upon Online</title>
+</head>
+
+<body>
+    <header id="top">
+        <table>
+            <tr>
+                <td><a href="index.html"><img src="media/once_upon_online_logo_small.png" alt="Once Upon Online Logo"></a></td>
+                <td>Search...</td>
+                <td>
+                    <a href="bookmark.html"><img src="media/bookmark.png" alt="Bookmark Page"></a>
+                    <a href="signup.html"><img src="media/profile.png" alt="Profile Page"></a>
+                    <a href="basket.html"><img src="media/basket.png" alt="Basket Page"></a>    
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><a href="index.html">Home</a></td>
+                <td><a href="products/mystery.html">Mystery</a></td>
+                <td><a href="products/romance.html">Romance</a></td>
+                <td><a href="products/thriller.html">Thriller</a></td>
+                <td><a href="products/crime.html">True Crime</a></td>
+                <td><a href="products/manga.html">Manga</a></td>
+                <td><a href="products/nonfiction.html">Non-Fiction</a></td>
+                <td><a href="products/kids.html">Kids</a></td>
+                <td><a href="products/lifestyle.html">Lifestyle</a></td>
+                <td><a href="products/all.html">Shop All</a></td>
+            </tr>
+        </table>
+    </header>
+
+    <body>
+        
+        <form action="profile.html" method="post"> 
+
+                <fieldset> 
+                    <legend><h2>Sign-Up</h2></legend>
+
+                    <section id="guideline">
+                        <label for="fName">First Name:</label><br><br><br>
+                        <label for="lName">Last Name:</label><br><br><br>
+                        <label for="username">Username:</label><br><br><br>
+                        <label for="email">Email:</label><br><br><br>
+                        <label for="phone">Phone:</label><br><br>
+                        <p>Gender:</p><br>
+                    </section>
+
+                    <section id="entries">
+                        <input type="text" id="fName" name="fName" required autofocus><br><br>
+                        <input type="text" id="lName" name="lName" required><br><br>
+                        <input type="text" id="username" name="username" required><br><br>
+                        <input type="email" id="email" name="email" placeholder="example@gmail.com" required><br><br>
+                        <input type="text" id="phone" name="phone" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required><br><br>
+
+                        <input type="radio" id="female" name="gender" value="Female"> 
+                        <label for="female">Female</label><br>
+                        <input type="radio" id="male" name="gender" value="Male"> 
+                        <label for="female">Male</label><br>
+                        <input type="radio" id="other" name="gender" value="Other">
+                        <label for="female">Other</label><br><br>
+                    </section>
+
+                    <table>
+                        <tr>
+                            <td><label for="fName">First Name:</label><br><br><br></td>
+                            <td><input type="text" id="fName" name="fName" required autofocus><br><br></td>
+                        </tr>
+                        <tr>
+                            <td><label for="lName">Last Name:</label><br><br><br></td>
+                            <td><input type="text" id="lName" name="lName" required><br><br></td>
+                        </tr>
+                    </table>
+
+                    <input type="submit" value="Sign-Up" id="submit">
+                </fieldset>
+
+    </body>
+
+    <footer>
+        <div>
+            <a href="#top" class="top">Back to top</a>
+            <p class="author">Authors: Calvin Nguyen, Yanyu Chen </p>
+            <p class="copyright">&copy; Copyright reserved 2025 </p>
+            <img src="media/x.png" alt="X Page">
+            <img src="media/instagram.png" alt="Instagram Page">
+            <img src="media/youtube.png" alt="YouTube Page">
+        </div>
+    </footer>
+</body>
+</html>
