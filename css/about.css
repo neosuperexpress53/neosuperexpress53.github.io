@@ -57,8 +57,23 @@ main {
     }
 }
 
+#aboutSection {
+    max-width: 1200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 #aboutSection p {
     font-size: 1.4em;
     text-align: center;
-    margin-block: 50px;
+    margin-bottom: 50px;
+}
+
+#aboutSection a button {
+    padding-block: 10px;
+    width: 150px;
+    font-size: 1.6em;
+    font-weight: bold;
 }
