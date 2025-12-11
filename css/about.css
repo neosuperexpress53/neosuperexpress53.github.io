@@ -56,3 +56,9 @@ main {
         opacity: 1;
     }
 }
+
+#aboutSection p {
+    font-size: 1.4em;
+    text-align: center;
+    margin-block: 50px;
+}
