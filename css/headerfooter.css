@@ -5,8 +5,12 @@
 
 html {
     font-family: TitilliumWeb;
-    width: 1500px;
+    max-width: 1500px;
     margin: auto;
+}
+
+body {
+    background-color:#C9A0DC;
 }
 
 header {
@@ -14,7 +18,6 @@ header {
 }
 
 header table {
-    /* border: 2px black solid; */
     margin: auto;
     width: 100%;
 }
@@ -22,21 +25,30 @@ header table {
 header table tr td:first-child img {
     height: 50px;
     width: auto;
-    margin-left: 20%;
+    display: block;
+    margin: auto;
+}
+
+header table:first-child tr td:last-child {
+    display: flex;
+    justify-content: space-between;
+    padding-left: 10px;
 }
 
 header table tr td:last-child a img {
     height: 50px;
     width: auto;
-    margin-right: 10px;
+    padding: 10px;
+    transition: background-color 0.3s, border-radius 0.3s;
 }
 
-header table tr td:last-child img:first-child {
-    margin-left: 10%;
+header table tr td:last-child img:hover {
+    border-radius: 25px;
+    background-color: rgb(112, 5, 72, 0.5);
 }
 
 header table:first-child tr td:nth-child(2) {
-    width: 70%;
+    width: 75%;
     border: 4px #700548;
     border-style: solid; 
     padding-left: 2%;
@@ -49,13 +61,15 @@ header table:last-child {
     text-align: center;
     border: 0px;
     border-collapse: collapse;
-    font-size: 150%;
+    font-size: 1.2em;
+    max-width: 1500px;
 }
 
 header table:last-child tr td {
     background-color: #700548;
     color: white;
     padding: 15px;
+    transition: background-color 0.35s;
 }
 
 header table:last-child tr td:hover {
@@ -65,16 +79,22 @@ header table:last-child tr td:hover {
 header table:last-child tr td a {
     text-decoration: none;
     color: white;
+    transition: color 0.35s;
+}
+
+header table:last-child tr td:hover a {
+    color: #700548;
 }
 
 footer {
-    margin: 50px auto;
-    width: 1500px;
+
+    max-width: 1500px;
     height: 50px;
     background-color: #C9A0DC;
     color: black;
     padding-top: 20px;
     border-top: 4px solid #700548;
+    clear: both;
 }
 
 footer div {
@@ -84,11 +104,13 @@ footer div {
 .top {
     padding-left: 10px;
     display: inline;
+    color: #700548;
+    font-weight: bold;
 }
 
 .author {
     display: inline;
-    padding-left: 650px;
+    margin-left: 650px;
 }
 
 .copyright {
@@ -99,7 +121,37 @@ footer div {
 footer img {
     display: inline;
     float: right;
-    padding-left: 5px;
-    padding-right: 10px;
-    height: 20px;
+    margin-left: 5px;
+    margin-right: 10px;
+    margin-top: -5px;
+    height: 28px;
+    border: 2px solid #C9A0DC;
+    transition: border 0.2s, border-radius 0.4s;
+}
+
+footer img:hover {
+    border: 2px dashed #700548;
+    border-radius: 50%;
+}
+
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+    background: #C9A0DC;
+    color: #700548;
+}
+
+body.dark-mode {
+    background: #700548;
+    color: #C9A0DC;
+}
+
+#theme-toggle {
+    padding: 10px 20px;
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 8px;
 }

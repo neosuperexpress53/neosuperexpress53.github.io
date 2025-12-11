@@ -1,0 +1,137 @@
+#title {
+    max-width: 1500px;
+    border-bottom: #700548 3px solid;
+}
+
+#title h1 {
+    margin-left: 45px;
+    font-size: 1.8em;
+    color: #700548;
+}
+
+#positioning {
+    display: flex;
+}
+
+#currentPage {
+    font-style: italic;
+    font-weight: bold;
+}
+
+#sidebar {
+    border-right: #700548 2px solid;
+
+    float: left;
+
+}
+
+#sidebar ul li {
+    list-style: none;
+    padding-block: 6px;
+    padding-left: 8px;
+    padding-right: 80px;
+    width: 120px;
+    border-block: 2px solid rgba(182, 96, 128, 0);
+    transition: font-weight 0.1s, background-color 0.25s, border-block 0.4s;
+}
+
+#sidebar ul li a {
+    color: #700548;
+    font-size: 1.2em;
+    text-decoration: none;
+}
+
+#sidebar ul li:hover {
+    font-weight: bold;
+    background-color: rgba(182, 96, 128, 0.3);
+    border-block: 2px solid rgba(182, 96, 128);
+}
+
+#productWidgets {
+    max-width: 1500px;
+    float: right;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(228, 211, 231);
+    padding-bottom: 40px;
+}
+
+.productLink {
+    text-decoration: none;
+}
+
+.productBlock {
+    background-color: rgb(228, 211, 231);
+    width: 206.8px;
+    border: rgb(234, 226, 236, 0) 1px dashed;
+    text-align: center;
+    transition: background-color 0.2s, border 0.4s;
+}
+
+.productBlock h4:nth-child(2) {
+    height: 50px;
+    padding-inline: 10px;
+}
+
+.productBlock h4 {
+    margin-block: 8px;
+    text-align: center;
+    color: #700548;
+}
+
+.imageBlock {
+    display: block;
+    height: 180px;
+    width: auto;
+    margin: auto;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    transition: transform 0.2s, filter 0.6s;
+}
+
+.productBlock:hover {
+    background-color: rgb(234, 226, 236);
+    border: rgb(134, 134, 134) 1px dashed;
+}
+
+.productBlock:hover img.imageBlock {
+    transform: scale(110%) rotate(8deg);
+    filter: drop-shadow(8px 6px 6px rgba(171, 68, 106, 0.4));
+}
+
+.originalPrice, .salePrice {
+    display: inline;
+}
+
+h4.originalPrice {
+    color: #776971;
+    text-decoration: line-through red 2px;
+}
+
+h4.salePrice {
+    font-style: italic;
+    color: #cf0000;
+    margin-right: 5px;
+}
+
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+    background: #C9A0DC;
+    color: #700548;
+}
+
+body.dark-mode {
+    background: #700548;
+    color: #C9A0DC;
+}
+
+#theme-toggle {
+    padding: 10px 20px;
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+}

@@ -1,0 +1,233 @@
+@font-face {
+    font-family: "TitilliumWeb";
+    src: url("../fonts/TitilliumWeb-Regular.ttf");
+}
+
+body {
+    font-family: TitilliumWeb;
+    margin: 0;
+    padding: 0;
+    background-color: #C9A0DC;
+}
+
+/* header {
+    max-width: 1500px;
+    margin: auto;
+    background-color: #C9A0DC;
+}
+
+header table {
+    margin: auto;
+    width: 100%;
+}
+
+header table tr td:first-child img {
+    height: 50px;
+    width: auto;
+    margin-left: 20%;
+}
+
+header table tr td:last-child a img {
+    height: 50px;
+    width: auto;
+    margin-right: 10px;
+
+}
+
+header table tr td:last-child img:first-child {
+    margin-left: 10%;
+}
+
+header table:first-child tr td:nth-child(2) {
+    width: 70%;
+    border: 4px #700548;
+    border-style:ridge; 
+    padding-left: 2%;
+}
+
+header table:last-child {
+    font-size: large;
+    text-align: center;
+    border: 0px;
+    border-collapse: collapse;
+}
+
+header table:last-child tr td {
+    background-color: #700548;
+    color: white;
+}
+
+header table:last-child tr td a {
+    text-decoration: none;
+    color: white;
+    font-size: 130%;
+}
+footer {
+    margin: 50px auto;
+    max-width: 1500px;
+    height: 50px;
+    background-color: #C9A0DC;
+    color: black;
+    padding-top: 20px;
+    border-top: 4px solid #700548;
+}
+
+footer div {
+    display: inline;
+}
+
+.top {
+    padding-left: 10px;
+    display: inline;
+}
+
+.authors {
+    display: inline;
+    padding-left: 650px;
+}
+
+.copyright {
+    display: inline;
+    padding-left: 30px;
+}
+
+footer img {
+    display: inline;
+    float: right;
+    padding-left: 5px;
+    padding-right: 10px;
+    height: 20px;
+} */
+
+/* NOTE TO YANYU: I am commenting out the header .css properties as my headerfooter.css file will be handling all of the header and footer properties for every page. */
+/* Please use headerfooter.css for all future pages, and if there is any interference please feel free to edit it and let me know! */
+
+div.basket {
+    width: 900px;
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-left: 120px;
+}
+
+div.basket h2 {
+    padding-left: 20px;
+}
+
+.images {
+    float: left;
+    height: 150px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+}
+
+.title {
+    padding: 0;
+    margin: 10px 0;
+    font-size: 30px;
+}
+
+.book_author {
+    padding: 0;
+    margin: 10px 0;
+    font-size: 25px;
+}
+
+.price {
+    padding: 0;
+    margin: 10px 0;
+    font-size: 20px;
+}
+
+button.bookmark {
+    margin-left: 135px;
+    background-color: #700548;
+    color: white;
+}
+
+button.delete {
+    margin-left: 5px;
+    margin-bottom: 40px;
+    background-color: #700548;
+    color: white;
+}
+
+.dropdown {
+    margin-left: 105px;
+    margin-bottom: 15px;
+
+}
+
+div.checkout {
+    width: 400px;
+    border: 2px solid black;
+    position: fixed;
+    margin-top: -768px;
+    margin-left: 1150px; 
+}
+
+.order {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.subtotal {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.shipping {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.tax {
+    margin-left: 20px;
+    font-weight: bold;
+}
+
+.total {
+    border-top: 2px solid #700548;
+    padding-top: 20px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    font-weight: bold;
+}
+
+.checkoutbutton {
+    height: 40px;
+    color: white;
+    background-color: #700548;
+    width: 360px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.checkoutbutton a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+    background: #C9A0DC;
+    color: #700548;
+}
+
+body.dark-mode {
+    background: #700548;
+    color: #C9A0DC;
+}
+
+#theme-toggle {
+    padding: 10px 20px;
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+}

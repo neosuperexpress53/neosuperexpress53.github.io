@@ -1,0 +1,58 @@
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#title {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: -15px;
+    text-align: center;
+    border-bottom: 4px solid #700548;
+    animation-name: underlineExpand;
+    animation-duration: 2.3s;
+    /* animation-delay: 0.5s; */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes underlineExpand {
+    0% {
+        max-width: 380px;
+    }
+
+    100% {
+        max-width: 1000px;
+    }
+}
+
+#title h1 {
+    font-size: 3em;
+    margin-bottom: 0px;
+}
+
+#title img {
+    height: 45px;
+    margin-bottom: -20px;
+}
+
+#title h2 {
+    position: relative;
+    animation-name: subtitleAppearance;
+    animation-duration: 1.5s;
+    /* animation-delay: 0.5s; */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes subtitleAppearance {
+    0% {
+        top: -45px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}

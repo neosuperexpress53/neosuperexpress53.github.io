@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Atomic Habits</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../../css/headerfooter.css" type="text/css">
+    <link rel="stylesheet" href="../../css/book.css" type="text/css">
+    <link rel="icon" href="../../media/tab_logo.ico" type="images/x-icon">
+</head>
+
+<body>
+    <header id="top">
+        <table>
+            <tr>
+                <td><a href="../../index.html"><img src="../../media/once_upon_online_logo_small.png" alt="Once Upon Online Logo"></a></td>
+                <td>Search...</td>
+                <td>
+                    <a href="../../wishlist.html"><img src="../../media/bookmark.png" alt="Bookmark Page"></a>
+                    <a href="../../signup.html"><img src="../../media/profile.png" alt="Profile Page"></a>
+                    <a href="../../basket.html"><img src="../../media/basket.png" alt="Basket Page"></a>    
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><a href="../../index.html">Home</a></td>
+                <td><a href="../../products/sale.html">On Sale</a></td>
+                <td><a href="../../products/newarrivals.html">New Arrivals</a></td>
+                <td><a href="../../products/all.html">Shop Products</a></td>
+                <td><a href="../../wishlist.html">Wishlist</a></td>
+                <td><a href="../../signup.html">My Account</a></td>
+                <td><a href="../../basket.html">Shopping Cart</a></td>
+                <td><a href="../../aboutus.html">About Us</a></td>
+            </tr>
+        </table>
+    </header>
+
+    
+    <main>
+
+        <a href="../../products/all.html" id="redirectBack">Back to Products</a>
+
+        <section id="productMain">
+
+            <section id="additionalImages">
+                <ul>
+                    <li><img src="../../media/additional_product_images/atomic_habits_1.jpg" alt="Atomic Habits"></li>
+                    <li><img src="../../media/additional_product_images/atomic_habits_2.jpg" alt="Atomic Habits"></li>
+                </ul>
+            </section>
+
+            <section id="productCover">
+                <img src="../../media/products/atomic_habits.jpg" alt="Atomic Habits">
+            </section>
+
+            <section id="productDescription">
+
+                <h1>Atomic Habits: An Easy & Proven Way to Build Good Habits & Break Bad Ones</h1>
+
+                <h3>by James Clear</h3>
+
+                <h4>| October 16, 2018</h4>
+
+                <h2>$22.99</h2>
+                <h2 id="salePrice"></h2>
+                <h2 id="originalPrice"></h2>
+
+                <section id="bookOptions">
+                    <a href="../../wishlist.html"><img src="../../media/bookmark.png" id="wishlistButton" alt="Wishlist"></a>
+
+                    <a href="../../basket.html"><button id="addToCart"><img src="../../media/basket.png" alt="Shopping Cart">Add to Shopping Cart</button></a>
+                </section>
+
+            </section>
+
+        </section>
+
+        <section id="bookSummary">
+
+            <h2>Summary</h2>
+
+            <p class="summaryPara">Tiny Changes, Remarkable Results</p>
+
+            <p class="summaryPara">No matter your goals, Atomic Habits offers a proven framework for improving--every day. James Clear, one of the world's leading experts on habit formation, reveals practical strategies that will teach you exactly how to form good habits, break bad ones, and master the tiny behaviors that lead to remarkable results.</p>
+
+            <p class="summaryPara">If you're having trouble changing your habits, the problem isn't you. The problem is your system. Bad habits repeat themselves again and again not because you don't want to change, but because you have the wrong system for change. You do not rise to the level of your goals. You fall to the level of your systems. Here, you'll get a proven system that can take you to new heights.</p>
+
+            <p class="summaryPara">Clear is known for his ability to distill complex topics into simple behaviors that can be easily applied to daily life and work. Here, he draws on the most proven ideas from biology, psychology, and neuroscience to create an easy-to-understand guide for making good habits inevitable and bad habits impossible. Along the way, readers will be inspired and entertained with true stories from Olympic gold medalists, award-winning artists, business leaders, life-saving physicians, and star comedians who have used the science of small habits to master their craft and vault to the top of their field.</p>
+
+        </section>
+       
+    </main>
+    
+    <footer>
+        <div>
+            <a href="#top" class="top">Back to top</a>
+            <p class="author">Authors: Calvin Nguyen, Yanyu Chen </p>
+            <p class="copyright">&copy; Copyright reserved 2025 </p>
+            <a href="https://x.com/home"><img src="../../media/x.png" alt="YouTube"></a>
+            <a href="https://instagram.com"><img src="../../media/instagram.png" alt="Instagram"></a>
+            <a href="https://youtube.com"><img src="../../media/youtube.png" alt="X Page"></a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("redirectBack").addEventListener("mouseenter", () => {
+            document.getElementById("redirectBack").textContent = 'Go back to "All Products?"';
+        });
+
+        document.getElementById("redirectBack").addEventListener("mouseleave", () => {
+            document.getElementById("redirectBack").textContent = 'Back to Products';
+        });
+
+    </script>
+</body>
+</html>

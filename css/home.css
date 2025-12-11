@@ -1,0 +1,278 @@
+main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+#title {
+    max-width: 1000px;
+    margin: auto;
+    margin-top: -15px;
+    text-align: center;
+    border-bottom: 4px solid #700548;
+    animation-name: underlineExpand;
+    animation-duration: 2.3s;
+    /* animation-delay: 0.5s; */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes underlineExpand {
+    0% {
+        max-width: 380px;
+    }
+
+    100% {
+        max-width: 1000px;
+    }
+}
+
+#title h1 {
+    font-size: 3em;
+    margin-bottom: 0px;
+}
+
+#title img {
+    height: 45px;
+    margin-bottom: -20px;
+}
+
+#title h2 {
+    position: relative;
+    animation-name: subtitleAppearance;
+    animation-duration: 1.5s;
+    /* animation-delay: 0.5s; */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes subtitleAppearance {
+    0% {
+        top: -45px;
+        opacity: 0;
+    }
+
+    100% {
+        top: 0px;
+        opacity: 1;
+    }
+}
+
+.quotedPortion {
+    font-style: italic;
+}
+
+#bookOfTheWeek {
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+    margin-block: 50px;
+}
+
+#bookOfTheWeek div:first-child, #bookOfTheWeek div:last-child {
+    max-width: 350px;
+    margin-top: 20px;
+}
+
+#bookOfTheWeek div:first-child p {
+    font-size: 1.2em;
+}
+
+#bookOfTheWeek div:first-child h2 {
+    text-align: center;
+    margin-bottom: -10px;
+    transition: transform 0.2s;
+}
+
+#bookOfTheWeek div:first-child:hover h2 {
+    transform: scale(150%);
+}
+
+#featureBook {
+    width: 500px;
+    height: 400px;
+}
+
+#spaceToFill {
+    width: 340px;
+    height: 340px;
+    transform: scale(105%);
+    position: relative;
+    top: -395px;
+    left: 70px;
+    z-index: -1;
+    background-color: #700548;
+    animation-name: boxSpin;
+    animation-duration: 6.5s;
+    /* animation-delay: 0.5s; */
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes boxSpin {
+    0% {
+        transform: rotate(0deg)
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+#featureBook img {
+    height: 400px;
+    width: auto;
+    margin-left: 75px;
+    border: 4px solid rgb(1, 1, 1, 0);
+    position: relative;
+    z-index: 1;
+    animation-name: featuredBook;
+    animation-duration: 1.5s;
+    /* animation-delay: 0.5s; */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 3;
+    transition: border 0.2s, filter 0.8s;
+}
+
+@keyframes featuredBook {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    25% {
+        transform: rotate(5deg);
+    }
+
+    75% {
+        transform: rotate(-5deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+#featureBook img:hover {
+    border: 4px solid rgb(37, 0, 23);
+    filter: drop-shadow(6px 2px 4px rgba(82, 0, 51, 0.8));
+}
+
+#newArrivals {
+    margin-bottom: 360px;
+}
+
+#newArrivals h2 {
+    border-bottom: 3px solid #700548;
+    max-width: 600px;
+    margin-bottom: 0px;
+    animation-name: arrivalsExpand;
+    animation-duration: 2.3s;
+    /* animation-delay: 0.5s; */
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+}
+
+@keyframes arrivalsExpand {
+    0% {
+        max-width: 300px;
+    }
+
+    100% {
+        max-width: 600px;
+    }
+}
+
+#newArrivals h2 a {
+    color: #700548;
+    text-decoration: none;
+}
+
+#newArrivals h2 a:hover {
+    font-style: italic;
+}
+
+#newBooks div {
+    float: left;
+}
+
+.productLink {
+    text-decoration: none;
+}
+
+.productBlock {
+    background-color: rgb(228, 211, 231, 0.6);
+    width: 198.4px;
+    height: 320px;
+    border: rgb(234, 226, 236, 0) 1px dashed;
+    /* border-radius: 30px; */
+    text-align: center;
+    transition: background-color 0.2s, border 0.4s;
+}
+
+.productBlock h4:nth-child(2) {
+    height: 50px;
+    padding-inline: 10px;
+}
+
+.productBlock h4 {
+    margin-block: 8px;
+    text-align: center;
+    color: #700548;
+}
+
+.imageBlock {
+    display: block;
+    height: 180px;
+    width: auto;
+    margin: auto;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    transition: transform 0.2s, filter 0.6s;
+}
+
+.productBlock:hover {
+    background-color: rgb(234, 226, 236, 0.6);
+    border: rgb(134, 134, 134) 1px dashed;
+}
+
+.productBlock:hover img.imageBlock {
+    transform: scale(110%) rotate(8deg);
+    filter: drop-shadow(8px 6px 6px rgba(171, 68, 106, 0.4));
+}
+
+.originalPrice, .salePrice {
+    display: inline;
+}
+
+h4.originalPrice {
+    color: #776971;
+    text-decoration: line-through red 2px;
+}
+
+h4.salePrice {
+    font-style: italic;
+    color: #cf0000;
+    margin-right: 5px;
+}
+
+#promotionalSection {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 50px;
+}
+
+#promotionalSection iframe {
+    transition: filter 0.3s;
+}
+
+#promotionalSection iframe:hover {
+    filter: drop-shadow(8px 6px 6px rgb(171, 68, 106, 0.8));
+}
+
+#promotionalSection img {
+    transition: filter 0.3s;
+}
+
+#promotionalSection img:hover {
+    filter: drop-shadow(8px 6px 6px rgb(171, 68, 106, 0.8));
+}

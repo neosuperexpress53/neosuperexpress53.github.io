@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Wishlist</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/headerfooter.css" type="text/css">
+    <link rel="stylesheet" href="css/wishlist.css" type="text/css">
+    <link rel="icon" href="./media/tab_logo.ico" type="images/x-icon">
+</head>
+
+<body>
+    <header id="top">
+        <table>
+            <tr>
+                <td><a href="../index.html"><img src="../media/once_upon_online_logo_small.png" alt="Once Upon Online Logo"></a></td>
+                <td>Search...</td>
+                <td>
+                    <a href="../wishlist.html"><img src="../media/bookmark.png" alt="Bookmark Page"></a>
+                    <a href="../signup.html"><img src="../media/profile.png" alt="Profile Page"></a>
+                    <a href="../basket.html"><img src="../media/basket.png" alt="Basket Page"></a>    
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><a href="../index.html">Home</a></td>
+                <td><a href="products/sale.html">On Sale</a></td>
+                <td><a href="products/newarrivals.html">New Arrivals</a></td>
+                <td><a href="products/all.html">Shop Products</a></td>
+                <td><a href="../wishlist.html">Wishlist</a></td>
+                <td><a href="../signup.html">My Account</a></td>
+                <td><a href="../basket.html">Shopping Cart</a></td>
+                <td><a href="../aboutus.html">About Us</a></td>
+            </tr>
+        </table>
+    </header>
+
+    
+    <main>
+    
+        <section id="title">
+            <h1>Wishlist</h1>
+            <img src="media/wishlist_share.png" id="shareBtn" alt="Share">
+            <img src="media/wishlist_delete.png" id="deleteBtn" alt="Delete">
+        </section>
+
+        <section class="wishlistProduct">
+
+            <div><a href="products/books/the_inheritance_games.html"><img src="media/products/theinheritancegames.png" class="productImage" alt="The Inheritance Games"></a></div>
+            <div>
+                <a href="products/books/the_inheritance_games.html"><h2 class="bookTitle">The Inheritance Games</h2></a></div>
+                <h4>Jennifer Lynn Barnes</h4>
+            </div>
+            <div>
+                <h2>$28.99</h2>
+                <a href="basket.html"><button>Add to Shopping Cart</button></a>
+                <img src="media/wishlist_delete.png" class="deleter" alt="Delete">
+            </div>
+
+        </section>
+
+        <section class="wishlistProduct">
+
+            <div><a href="products/books/the_divine_comedy.html"><img src="media/products/divine_comedy.jpg" class="productImage" alt="Divine Comedy"></a></div>
+            <div>
+                <a href="products/books/the_divine_comedy.html"><h2 class="bookTitle">The Divine Comedy</h2></a>
+                <h4>Dante Alighieri, Allen Mandelbaum</h4>
+            </div>
+            <div>
+                <h2>$46.99</h2>
+                <a href="basket.html"><button>Add to Shopping Cart</button></a>
+                <img src="media/wishlist_delete.png" class="deleter" alt="Delete">
+            </div>
+
+        </section>
+
+        <section class="wishlistProduct">
+
+            <div><a href="products/books/the_priory_of_the_orange_tree.html"><img src="media/products/theprioryoftheorangetree.png" class="productImage" alt="The Priory of the Orange Tree"></a></div>
+            <div>
+                <a href="products/books/the_priory_of_the_orange_tree.html"><h2 class="bookTitle">The Priory of the Orange Tree</h2></a>
+                <h4>Samantha Shannon</h4>
+            </div>
+            <div>
+                <h2>$25.99</h2>
+                <a href="basket.html"><button>Add to Shopping Cart</button></a>
+                <img src="media/wishlist_delete.png" class="deleter" alt="Delete">
+            </div>
+
+        </section>
+
+        <section class="wishlistProduct">
+
+            <div><a href="products/books/the_cruel_prince.html"><img src="media/products/thecruelprince.png" class="productImage" alt="The Cruel Prince"></a></div>
+            <div>
+                <a href="products/books/the_cruel_prince.html"><h2 class="bookTitle">The Cruel Prince</h2></a>
+                <h4>Holly Black</h4>
+            </div>
+            <div>
+                <h2>$23.99</h2>
+                <a href="basket.html"><button>Add to Shopping Cart</button></a>
+                <img src="media/wishlist_delete.png" class="deleter" alt="Delete">
+            </div>
+
+        </section>
+
+    </main>
+    
+    <button id="theme-toggle">Dark/Light Mode</button>
+    
+    <footer>
+        <div>
+            <a href="#top" class="top">Back to top</a>
+            <p class="author">Authors: Calvin Nguyen, Yanyu Chen </p>
+            <p class="copyright">&copy; Copyright reserved 2025 </p>
+            <a href="https://x.com/home"><img src="../media/x.png" alt="YouTube"></a>
+            <a href="https://instagram.com"><img src="../media/instagram.png" alt="Instagram"></a>
+            <a href="https://youtube.com"><img src="../media/youtube.png" alt="X Page"></a>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+    <script>
+
+        wishlistProduct = document.getElementsByClassName("wishlistProduct");
+
+        bookTitles = document.getElementsByClassName("bookTitle");
+
+        deleter = document.getElementsByClassName("deleter");
+
+        for (let i = 0; i < wishlistProduct.length; i++) {
+            deleter[i].addEventListener("click", () => {
+                wishlistProduct[i].style.display = "none";
+                bookTitles[i].innerHTML = "";
+            })
+        }
+
+        document.getElementById("deleteBtn").addEventListener("click", () => {
+            for (let i = 0; i < wishlistProduct.length; i++) {
+                wishlistProduct[i].style.display = "none";
+                bookTitles[i].innerHTML = "";
+            }
+        })
+
+        document.getElementById("shareBtn").addEventListener("click", () => {
+            let titleString = "";
+
+            for (let i = 0; i < (wishlistProduct.length - 1); i++) {
+
+                if (bookTitles[i].innerHTML == "") {
+                    continue;
+                } else {
+                    titleString += "\n" + bookTitles[i].innerHTML + ",";
+                }
+            }
+
+            if (bookTitles[wishlistProduct.length - 1].innerHTML == "") {
+                if (titleString == "") {
+                    alert("Nothing to copy!");
+                } else {
+                    titleString = titleString.slice(0, -1);
+                    titleString += ".";
+                    navigator.clipboard.writeText("Wishlisted books:" + titleString);
+                    alert("Copied text to clipboard!\n\nWishlisted books:" + titleString);
+                }
+            } else {
+                titleString += "\n" + bookTitles[wishlistProduct.length - 1].innerHTML + ".";
+                navigator.clipboard.writeText("Wishlisted books:" + titleString);
+                alert("Copied text to clipboard!\n\nWishlisted books:" + titleString);
+            }
+        })
+        
+    </script>
+</body>
+</html>

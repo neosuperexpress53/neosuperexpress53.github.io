@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gordon Ramsay's Home Cooking</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../../css/headerfooter.css" type="text/css">
+    <link rel="stylesheet" href="../../css/book.css" type="text/css">
+    <link rel="icon" href="../../media/tab_logo.ico" type="images/x-icon">
+</head>
+
+<body>
+    <header id="top">
+        <table>
+            <tr>
+                <td><a href="../../index.html"><img src="../../media/once_upon_online_logo_small.png" alt="Once Upon Online Logo"></a></td>
+                <td>Search...</td>
+                <td>
+                    <a href="../../wishlist.html"><img src="../../media/bookmark.png" alt="Bookmark Page"></a>
+                    <a href="../../signup.html"><img src="../../media/profile.png" alt="Profile Page"></a>
+                    <a href="../../basket.html"><img src="../../media/basket.png" alt="Basket Page"></a>    
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><a href="../../index.html">Home</a></td>
+                <td><a href="../../products/sale.html">On Sale</a></td>
+                <td><a href="../../products/newarrivals.html">New Arrivals</a></td>
+                <td><a href="../../products/all.html">Shop Products</a></td>
+                <td><a href="../../wishlist.html">Wishlist</a></td>
+                <td><a href="../../signup.html">My Account</a></td>
+                <td><a href="../../basket.html">Shopping Cart</a></td>
+                <td><a href="../../aboutus.html">About Us</a></td>
+            </tr>
+        </table>
+    </header>
+
+    
+    <main>
+
+        <a href="../../products/all.html" id="redirectBack">Back to Products</a>
+
+        <section id="productMain">
+
+            <section id="additionalImages">
+                <ul>
+                </ul>
+            </section>
+
+            <section id="productCover">
+                <img src="../../media/products/gordon_ramsay_home_cooking.jpg" alt="Gordon Ramsay's Home Cooking">
+            </section>
+
+            <section id="productDescription">
+
+                <h1>Gordon Ramsay's Home Cooking</h1>
+
+                <h3>by Gordon Ramsay</h3>
+
+                <h4>| April 9, 2013</h4>
+
+                <h2>$41.99</h2>
+                <h2 id="salePrice"></h2>
+                <h2 id="originalPrice"></h2>
+
+                <section id="bookOptions">
+                    <a href="../../wishlist.html"><img src="../../media/bookmark.png" id="wishlistButton" alt="Wishlist"></a>
+
+                    <a href="../../basket.html"><button id="addToCart"><img src="../../media/basket.png" alt="Shopping Cart">Add to Shopping Cart</button></a>
+                </section>
+
+            </section>
+
+        </section>
+
+        <section id="bookSummary">
+
+            <h2>Summary</h2>
+
+            <p class="summaryPara">Based on a new cooking show, this book will give experienced as well as novice cooks the desire, confidence and inspiration to get cooking. Ramsay will offer simple, accessible recipes with a "wow" factor. Gordon has travelled the world from India and the Far East to LA and Europe, and the recipes in this book will draw all these culinary influences together to show us simple, vibrant and delicious recipes that reflect the way we eat today. For example: Miso braised salmon fillet with Asian vegetables, Pork and Bacon slider with home made bbq sauce, Curried Sweetcorn Soup, Wild Mushroom Risotto Arrancini, and Baked Lemon Cheesecake with Raspberries.
+</p>
+            
+            <p class="summaryPara">Each chapter will concentrate on a different area of cooking--from the classics to the secret of cooking with Chili and spice, through roasting, baking, and helpful sections on cooking good food for less and cooking for a crowd. Woven into the book will be useful tricks and tips--from ways to save time and money, to cleaning and prepping ingredients, to pan frying like a pro.
+</p>
+
+            <p class="summaryPara">Stuffed full of delicious recipes, invaluable tips and lashings of Gordon's trademark cheeky wit, Gordon Ramsay's Home Cooking is the ultimate cooking lesson from the ultimate chef.</p>
+        </section>
+       
+    </main>
+    
+    <footer>
+        <div>
+            <a href="#top" class="top">Back to top</a>
+            <p class="author">Authors: Calvin Nguyen, Yanyu Chen </p>
+            <p class="copyright">&copy; Copyright reserved 2025 </p>
+            <a href="https://x.com/home"><img src="../../media/x.png" alt="YouTube"></a>
+            <a href="https://instagram.com"><img src="../../media/instagram.png" alt="Instagram"></a>
+            <a href="https://youtube.com"><img src="../../media/youtube.png" alt="X Page"></a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("redirectBack").addEventListener("mouseenter", () => {
+            document.getElementById("redirectBack").textContent = 'Go back to "All Products?"';
+        });
+
+        document.getElementById("redirectBack").addEventListener("mouseleave", () => {
+            document.getElementById("redirectBack").textContent = 'Back to Products';
+        });
+
+    </script>
+</body>
+</html>

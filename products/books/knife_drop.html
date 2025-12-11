@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Knife Drop</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../../css/headerfooter.css" type="text/css">
+    <link rel="stylesheet" href="../../css/book.css" type="text/css">
+    <link rel="icon" href="../../media/tab_logo.ico" type="images/x-icon">
+</head>
+
+<body>
+    <header id="top">
+        <table>
+            <tr>
+                <td><a href="../../index.html"><img src="../../media/once_upon_online_logo_small.png" alt="Once Upon Online Logo"></a></td>
+                <td>Search...</td>
+                <td>
+                    <a href="../../wishlist.html"><img src="../../media/bookmark.png" alt="Bookmark Page"></a>
+                    <a href="../../signup.html"><img src="../../media/profile.png" alt="Profile Page"></a>
+                    <a href="../../basket.html"><img src="../../media/basket.png" alt="Basket Page"></a>    
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><a href="../../index.html">Home</a></td>
+                <td><a href="../../products/sale.html">On Sale</a></td>
+                <td><a href="../../products/newarrivals.html">New Arrivals</a></td>
+                <td><a href="../../products/all.html">Shop Products</a></td>
+                <td><a href="../../wishlist.html">Wishlist</a></td>
+                <td><a href="../../signup.html">My Account</a></td>
+                <td><a href="../../basket.html">Shopping Cart</a></td>
+                <td><a href="../../aboutus.html">About Us</a></td>
+            </tr>
+        </table>
+    </header>
+
+    
+    <main>
+
+        <a href="../../products/all.html" id="redirectBack">Back to Products</a>
+
+        <section id="productMain">
+
+            <section id="additionalImages">
+                <ul>
+                    <li><img src="../../media/additional_product_images/knife_drop_1.jpg" alt="Knife Drop: Creative Recipes Anyone Can Cook"></li>
+                    <li><img src="../../media/additional_product_images/knife_drop_2.jpg" alt="Knife Drop: Creative Recipes Anyone Can Cook"></li>
+                    <li><img src="../../media/additional_product_images/knife_drop_3.jpg" alt="Knife Drop: Creative Recipes Anyone Can Cook"></li>
+                </ul>
+            </section>
+
+            <section id="productCover">
+                <img src="../../media/products/knife_drop.jpg" alt="Knife Drop: Creative Recipes Anyone Can Cook">
+            </section>
+
+            <section id="productDescription">
+
+                <h1>Knife Drop: Creative Recipes Anyone Can Cook</h1>
+
+                <h3>by Nick DiGiovanni, Gordon Ramsay</h3>
+
+                <h4>| June 13, 2023</h4>
+
+                <h2>$47.99</h2>
+                <h2 id="salePrice"></h2>
+                <h2 id="originalPrice"></h2>
+
+                <section id="bookOptions">
+                    <a href="../../wishlist.html"><img src="../../media/bookmark.png" id="wishlistButton" alt="Wishlist"></a>
+
+                    <a href="../../basket.html"><button id="addToCart"><img src="../../media/basket.png" alt="Shopping Cart">Add to Shopping Cart</button></a>
+                </section>
+
+            </section>
+
+        </section>
+
+        <section id="bookSummary">
+
+            <h2>Summary</h2>
+
+            <p class="summaryPara">Forget the rules and get cooking with flavor-forward recipes from celebrity chef and social media superstar Nick DiGiovanni!
+</p>
+
+            <p class="summaryPara">Home-cooked food doesn’t need to be over-the-top, fussy, or time-consuming to be amazing. In Knife Drop, Nick DiGiovanni gives you the tools to become fearless in the kitchen and create easy, delicious meals.
+</p>
+
+            <p class="summaryPara">Building on a foundation of staple recipes, like basic pasta dough or homemade butter, Nick shares a mouthwatering selection of his favorite recipes. Feast on New England favorites like Browned Butter Lobster Rolls and Garlic Butter Steak Tips, enjoy decadent pasta dishes like Smoky Mezcal Rigatoni and Sungold Spaghetti, and recreate fan favorites like his Viral Pasta Chips and Dino Nuggets. And of course, Nick had to include some “collab” recipes from his famous friends like Andrew Zimmern, Robert Irvine, Joanne Chang, Lynja, and more.
+</p>
+
+            <p class="summaryPara">Knife Drop also includes Nick’s expert advice on equipment, ingredients, and techniques, so home cooks at any level can pick up some new skills. Explore a library of QR codes linking to video tutorials showcasing key cooking techniques, from holding a chef’s knife and making a piping bag to pronouncing “gnocchi” the correct way.
+</p>
+
+            <p class="summaryPara">These are creative recipes ANYONE can cook!</p>
+
+        </section>
+       
+    </main>
+    
+    <footer>
+        <div>
+            <a href="#top" class="top">Back to top</a>
+            <p class="author">Authors: Calvin Nguyen, Yanyu Chen </p>
+            <p class="copyright">&copy; Copyright reserved 2025 </p>
+            <a href="https://x.com/home"><img src="../../media/x.png" alt="YouTube"></a>
+            <a href="https://instagram.com"><img src="../../media/instagram.png" alt="Instagram"></a>
+            <a href="https://youtube.com"><img src="../../media/youtube.png" alt="X Page"></a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("redirectBack").addEventListener("mouseenter", () => {
+            document.getElementById("redirectBack").textContent = 'Go back to "All Products?"';
+        });
+
+        document.getElementById("redirectBack").addEventListener("mouseleave", () => {
+            document.getElementById("redirectBack").textContent = 'Back to Products';
+        });
+
+    </script>
+</body>
+</html>

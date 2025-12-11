@@ -1,0 +1,170 @@
+main {
+    max-width: 1280px;
+    margin: auto;
+}
+
+#redirectBack {
+    color: #700548;
+    position: relative;
+    top: 20px;
+}
+
+#productMain {
+    display: flex;
+    max-width: 1280px;
+    margin: auto;
+    margin-block: 50px;
+    justify-content: center;
+    /* border: 2px solid black; */
+    padding-bottom: 40px;
+    border-bottom: 2px solid #700548;
+}
+
+#additionalImages {
+    height: 500px;
+}
+
+#additionalImages ul {
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#additionalImages ul li {
+    list-style-type: none;
+    background-color: rgb(228, 211, 231);
+    border: 3px solid #700548;
+}
+
+#additionalImages ul li img {
+    max-height: 150px;
+    margin: auto;
+    display: block;
+    transition: transform 0.35s, filter 0.7s;
+}
+
+#additionalImages ul li:hover img {
+    transform: scale(300%) translate(100px);
+    filter: drop-shadow(2px 2px 6px black);
+    position: relative;
+    z-index: 1;
+}
+
+#productCover {
+    width: 400px;
+    height: 500px;
+    padding-inline: 30px;
+    filter: drop-shadow(4px 4px #700548);
+    /* border: 2px solid black; */
+}
+
+#productCover img {
+    max-width: 400px;
+    max-height: 500px;
+    margin: auto;
+    display: block;
+}
+
+#productDescription {
+    margin-top: 30px;
+}
+
+#productDescription h1 {
+    font-size: 2.5em;
+}
+
+#productDescription h1, #productDescription h3, #productDescription h4 {
+    margin-block: 0px;
+    margin-bottom: 15px;
+}
+
+#productDescription h4 {
+    color: #2f031f;
+}
+
+#salePrice {
+    color: rgb(216, 0, 0);
+    margin-right: 10px;
+    font-style: italic;
+}
+
+#originalPrice {
+    text-decoration: line-through rgb(216, 0, 0) 2px;
+    color: rgb(84, 84, 84);
+}
+
+#productDescription h2 {
+    float: left;
+    margin-top: 40px;
+    font-size: 1.7em;
+}
+
+#bookOptions {
+    clear: both;
+    margin-top: 140px;
+    border: 4px #700548 dashed;
+    height: 105px;
+    padding-inline: 10px;
+    align-content: center;
+    background-color: rgb(228, 211, 231);
+}
+
+#bookOptions img {
+    height: 50px;
+    margin-right: 10px;
+}
+
+#wishlistButton:hover {
+    border-radius: 5px;
+    background-color: rgb(112, 5, 72, 0.5);
+}
+
+#addToCart {
+    height: 60px;
+    width: 430px;
+    display: inline-flex;
+    align-items: center;
+    padding-right: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+#bookSummary {
+    background-color: rgb(228, 211, 231);
+    padding: 20px;
+    padding-inline: 40px;
+    border: 2px dashed #700548;
+    margin-bottom: 40px;
+    max-width: 105px;
+    min-height: 60px;
+    transition: max-width 0.6s, min-height 0.6s;
+}
+
+#bookSummary:hover {
+    max-width: 1200px;
+    min-height: 200px;
+}
+
+#bookSummary h2 {
+    border-bottom: #700548 2px solid;
+    max-width: 105px;
+    transition: max-width 0.45s;
+}
+
+#bookSummary:hover h2 {
+    max-width: 1280px;
+}
+
+#bookSummary p {
+    display: none;
+    font-size: 0.1em;
+    transition: font-size 0.9s;
+}
+
+#bookSummary:hover p {
+    display: block;
+    font-size: 1em;
+    padding-inline: 20px;
+}

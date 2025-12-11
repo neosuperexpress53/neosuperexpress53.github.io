@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gordon Ramsay's Quick and Delicious</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../../css/headerfooter.css" type="text/css">
+    <link rel="stylesheet" href="../../css/book.css" type="text/css">
+    <link rel="icon" href="../../media/tab_logo.ico" type="images/x-icon">
+</head>
+
+<body>
+    <header id="top">
+        <table>
+            <tr>
+                <td><a href="../../index.html"><img src="../../media/once_upon_online_logo_small.png" alt="Once Upon Online Logo"></a></td>
+                <td>Search...</td>
+                <td>
+                    <a href="../../wishlist.html"><img src="../../media/bookmark.png" alt="Bookmark Page"></a>
+                    <a href="../../signup.html"><img src="../../media/profile.png" alt="Profile Page"></a>
+                    <a href="../../basket.html"><img src="../../media/basket.png" alt="Basket Page"></a>    
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><a href="../../index.html">Home</a></td>
+                <td><a href="../../products/sale.html">On Sale</a></td>
+                <td><a href="../../products/newarrivals.html">New Arrivals</a></td>
+                <td><a href="../../products/all.html">Shop Products</a></td>
+                <td><a href="../../wishlist.html">Wishlist</a></td>
+                <td><a href="../../signup.html">My Account</a></td>
+                <td><a href="../../basket.html">Shopping Cart</a></td>
+                <td><a href="../../aboutus.html">About Us</a></td>
+            </tr>
+        </table>
+    </header>
+
+    
+    <main>
+
+        <a href="../../products/all.html" id="redirectBack">Back to Products</a>
+
+        <section id="productMain">
+
+            <section id="additionalImages">
+                <ul>
+
+                </ul>
+            </section>
+
+            <section id="productCover">
+                <img src="../../media/products/gordon_ramsay_quick_and_delicious.jpg" alt="Gordon Ramsay's Quick and Delicious">
+            </section>
+
+            <section id="productDescription">
+
+                <h1>Gordon Ramsay's Quick and Delicious: 100 Recipes to Cook in 30 Minutes or Less</h1>
+
+                <h3>by Gordon Ramsay</h3>
+
+                <h4>| September 1, 2020</h4>
+
+                <h2></h2>
+                <h2 id="salePrice">$26.99</h2>
+                <h2 id="originalPrice">39.99</h2>
+
+                <section id="bookOptions">
+                    <a href="../../wishlist.html"><img src="../../media/bookmark.png" id="wishlistButton" alt="Wishlist"></a>
+
+                    <a href="../../basket.html"><button id="addToCart"><img src="../../media/basket.png" alt="Shopping Cart">Add to Shopping Cart</button></a>
+                </section>
+
+            </section>
+
+        </section>
+
+        <section id="bookSummary">
+
+            <h2>Summary</h2>
+
+            <p class="summaryPara">From Michelin starred chef Gordon Ramsay, create high-quality food without spending hours in the kitchen with these fast and straightforward recipes and tips.
+  </p>
+
+            <p class="summaryPara">With unlimited access to recipes, why does anyone need another cookbook? Because not all recipes are born equal. Not all of them have been created by a global superstar chef who has built his reputation on delivering the very best food -- whether that's the ultimate fine dining experience at his 3 Michelin-star Restaurant, Gordon Ramsay, or the perfectly crafted burger from his Las Vegas burger joint.
+  </p>
+
+            <p class="summaryPara">Over the course of his stellar career, Gordon has learned every trick in the trade to create dishes that taste fantastic and that can be produced without fail during even the busiest of days. Armed with that knowledge, he has written an inspired collection of recipes for the time-pressed home cook who doesn't want to compromise on taste or flavor.
+</p>
+
+            <p class="summaryPara">The result is 100 tried and tested recipes that you'll find yourself using time and again. All the recipes take 30 minutes or less and use readily available ingredients that are transformed into something special with Gordon's no-nonsense approach to delicious food.
+</p>
+        </section>
+       
+    </main>
+    
+    <footer>
+        <div>
+            <a href="#top" class="top">Back to top</a>
+            <p class="author">Authors: Calvin Nguyen, Yanyu Chen </p>
+            <p class="copyright">&copy; Copyright reserved 2025 </p>
+            <a href="https://x.com/home"><img src="../../media/x.png" alt="YouTube"></a>
+            <a href="https://instagram.com"><img src="../../media/instagram.png" alt="Instagram"></a>
+            <a href="https://youtube.com"><img src="../../media/youtube.png" alt="X Page"></a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("redirectBack").addEventListener("mouseenter", () => {
+            document.getElementById("redirectBack").textContent = 'Go back to "All Products?"';
+        });
+
+        document.getElementById("redirectBack").addEventListener("mouseleave", () => {
+            document.getElementById("redirectBack").textContent = 'Back to Products';
+        });
+
+    </script>
+</body>
+</html>

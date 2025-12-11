@@ -1,0 +1,137 @@
+#title {
+    border-bottom: 3px solid #700548;
+    width: 250px;
+    margin: auto;
+    padding-bottom: 20px;
+}
+
+#title h1 {
+    text-align: center;
+    font-weight: bold;
+}
+
+#title img {
+    max-height: 35px;
+    padding: 10px;
+    margin-top: -10px;
+    transition: background-color 0.3s, border-radius 0.3s;
+}
+
+#title img:hover {
+    border-radius: 50%;
+    background-color: rgb(112, 5, 72, 0.5);
+}
+
+#title img:nth-child(2) {
+    margin-left: 68px;
+}
+
+.wishlistProduct {
+    background-color: rgb(228, 211, 231);
+    border: #700548 dashed 4px;
+    max-width: 900px;
+    height: 200px;
+    margin: auto;
+    margin-block: 40px;
+    transition: background-color 0.2s;
+}
+
+.wishlistProduct:hover {
+    background-color: white;
+}
+
+.wishlistProduct div:first-child {
+    display: inline;
+    padding: 30px;
+    float: left;
+    margin-left: 20px;
+}
+
+.productImage {
+    height: 140px;
+    width: auto;
+    border: 3px double rgb(112, 5, 72, 0);
+    transition: border 0.3s;
+}
+
+.productImage:hover {
+    border: 3px double rgb(112, 5, 72, 1);
+}
+
+.wishlistProduct div:nth-child(2) {
+    margin-top: 60px;
+}
+
+.wishlistProduct div:nth-child(2) h2 {
+    transition: transform 0.3s, margin-left 0.3s;
+}
+
+.wishlistProduct div:nth-child(2) h2:hover {
+    transform: scale(120%) translate(40px);
+}
+
+.wishlistProduct div:last-child {
+    float: right;
+    margin-top: -80px;
+}
+
+.wishlistProduct div:last-child img {
+    height: 40px;
+    float: right;
+    padding: 10px;
+    margin-inline: 15px;
+    transition: background-color 0.4s, border-radius 0.4s, transform 0.6s;
+}
+
+.wishlistProduct div:last-child img:hover {
+    border-radius: 50%;
+    background-color: rgb(112, 5, 72, 0.7);
+    transform: rotate(-360deg);
+}
+
+.wishlistProduct div:last-child button {
+    width: 125px;
+    padding: 10px;
+    background-color: #C9A0DC;
+    color: white;
+    font-weight: bold;
+    font-size: 0.95em;
+    border: #700548 2px solid;
+    transition: background-color 0.2s;
+}
+
+.wishlistProduct div:last-child button:hover {
+    background-color: #700548;
+}
+
+.wishlistProduct div:last-child h2 {
+    float: left;
+    margin-right: 20px;
+    margin-top: 15px;
+}
+
+a {
+    color: #700548;
+}
+
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body {
+    background: #C9A0DC;
+    color: #700548;
+}
+
+body.dark-mode {
+    background: #700548;
+    color: #C9A0DC;
+}
+
+#theme-toggle {
+    padding: 10px 20px;
+    border: none;
+    margin: 20px;
+    cursor: pointer;
+    border-radius: 8px;
+}

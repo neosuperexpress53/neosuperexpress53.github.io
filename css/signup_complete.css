@@ -12,49 +12,23 @@ footer {
     clear: both;
 }
 
-fieldset {
-    border: 3px #700548 dashed;
-    width: 500px;
+main {
+    margin-top: 40px;
+}
+
+main section {
+    max-width: 900px;
     margin: auto;
+    padding: 100px;
     background-color: white;
+    border: 4px dashed #700548;
 }
 
-fieldset legend {
-    font-weight: bolder;
-    text-shadow: -2px -2px 4px #700548;
-}
-
-fieldset table tr td:first-child {
-    width: 290px;
-    text-align: right;
-    padding: 20px;
+main section p {
+    color: #700548;
+    font-size: 1.3em;
     font-weight: bold;
-    font-size: 18px;
-}
-
-fieldset table tr td:last-child input {
-    width: 200%;
-    border: 1.5px solid #700548;
-}
-
-#radialMenu input {
-    width: 20px;
-}
-
-#buttonArea {
-    width: 1000px;
-}
-
-#submit {
-    width: 200px;
-    height: 50px;
-    border: 4px solid #700548;
-    background-color: #C9A0DC;
-    color: white;
-    font-weight: bold;
-    margin-left: 400px;
-    margin-block: 35px;
-    clear: both;
+    text-align: center;
 }
 
 @media screen and (max-width: 1200px) {

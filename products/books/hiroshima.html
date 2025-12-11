@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Hiroshima</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../../css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="../../css/headerfooter.css" type="text/css">
+    <link rel="stylesheet" href="../../css/book.css" type="text/css">
+    <link rel="icon" href="../../media/tab_logo.ico" type="images/x-icon">
+</head>
+
+<body>
+    <header id="top">
+        <table>
+            <tr>
+                <td><a href="../../index.html"><img src="../../media/once_upon_online_logo_small.png" alt="Once Upon Online Logo"></a></td>
+                <td>Search...</td>
+                <td>
+                    <a href="../../wishlist.html"><img src="../../media/bookmark.png" alt="Bookmark Page"></a>
+                    <a href="../../signup.html"><img src="../../media/profile.png" alt="Profile Page"></a>
+                    <a href="../../basket.html"><img src="../../media/basket.png" alt="Basket Page"></a>    
+                </td>
+            </tr>
+        </table>
+        <table>
+            <tr>
+                <td><a href="../../index.html">Home</a></td>
+                <td><a href="../../products/sale.html">On Sale</a></td>
+                <td><a href="../../products/newarrivals.html">New Arrivals</a></td>
+                <td><a href="../../products/all.html">Shop Products</a></td>
+                <td><a href="../../wishlist.html">Wishlist</a></td>
+                <td><a href="../../signup.html">My Account</a></td>
+                <td><a href="../../basket.html">Shopping Cart</a></td>
+                <td><a href="../../aboutus.html">About Us</a></td>
+            </tr>
+        </table>
+    </header>
+
+    
+    <main>
+
+        <a href="../../products/all.html" id="redirectBack">Back to Products</a>
+
+        <section id="productMain">
+
+            <section id="additionalImages">
+                <ul>
+                </ul>
+            </section>
+
+            <section id="productCover">
+                <img src="../../media/products/hiroshima.jpg" alt="Hiroshima">
+            </section>
+
+            <section id="productDescription">
+
+                <h1>Hiroshima</h1>
+
+                <h3>by John Hersey</h3>
+
+                <h4>| March 4, 1989</h4>
+
+                <h2>$13.99</h2>
+                <h2 id="salePrice"></h2>
+                <h2 id="originalPrice"></h2>
+
+                <section id="bookOptions">
+                    <a href="../../wishlist.html"><img src="../../media/bookmark.png" id="wishlistButton" alt="Wishlist"></a>
+
+                    <a href="../../basket.html"><button id="addToCart"><img src="../../media/basket.png" alt="Shopping Cart">Add to Shopping Cart</button></a>
+                </section>
+
+            </section>
+
+        </section>
+
+        <section id="bookSummary">
+
+            <h2>Summary</h2>
+
+            <p class="summaryPara">Hiroshima is the story of six human beings who lived through the greatest single manmade disaster in history. John Hersey tells what these six -- a clerk, a widowed seamstress, a physician, a Methodist minister, a young surgeon, and a German Catholic priest -- were doing at 8:15 a.m. on August 6, 1945, when Hiroshima was destroyed by the first atomic bomb ever dropped on a city. Then he follows the course of their lives hour by hour, day by day.</p>
+
+            <p class="summaryPara">The New Yorker of August 31, 1946, devoted all its space to this story. The immediate repercussions were vast: newspapers here and abroad reprinted it; during evening half-hours it was read over the network of the American Broadcasting Company; leading editorials were devoted to it in uncounted newspapers.
+</p>
+
+            <p class="summaryPara">Almost four decades after the original publication of this celebrated book John Hersey went back to Hiroshima in search of the people whose stories he had told. His account of what he discovered about them -- the variety of ways in which they responded to the past and went on with their lives -- is now the eloquent and moving final chapter of Hiroshima.</p>
+        </section>
+       
+    </main>
+    
+    <footer>
+        <div>
+            <a href="#top" class="top">Back to top</a>
+            <p class="author">Authors: Calvin Nguyen, Yanyu Chen </p>
+            <p class="copyright">&copy; Copyright reserved 2025 </p>
+            <a href="https://x.com/home"><img src="../../media/x.png" alt="YouTube"></a>
+            <a href="https://instagram.com"><img src="../../media/instagram.png" alt="Instagram"></a>
+            <a href="https://youtube.com"><img src="../../media/youtube.png" alt="X Page"></a>
+        </div>
+    </footer>
+
+    <script>
+        document.getElementById("redirectBack").addEventListener("mouseenter", () => {
+            document.getElementById("redirectBack").textContent = 'Go back to "All Products?"';
+        });
+
+        document.getElementById("redirectBack").addEventListener("mouseleave", () => {
+            document.getElementById("redirectBack").textContent = 'Back to Products';
+        });
+
+    </script>
+</body>
+</html>
